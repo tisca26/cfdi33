@@ -35,27 +35,6 @@ if (!function_exists('in_array_field')) {
     }
 }
 
-if (!function_exists('idioma_por_abbr')) {
-    function idioma_por_abbr($abbr = 'es')
-    {
-        switch ($abbr){
-            case 'es':
-                return 'Español';
-            case 'en':
-                return 'English';
-            default:
-                return 'Español';
-        }
-    }
-}
-
-if (!function_exists('pretty_id')) {
-    function pretty_id($id = '0')
-    {
-        return str_pad($id, 6, "0", STR_PAD_LEFT);
-    }
-}
-
 if (!function_exists('valid_id')) {
     function valid_id($id = '0')
     {

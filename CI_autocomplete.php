@@ -75,13 +75,24 @@
  * @property CI_Encrypt          $encrypt              Provides two-way keyed encoding using Mcrypt
  * @property CI_Javascript       $javascript           Javascript Class
  ***************** YOUR LIBRARIES *****************
+ * @property Auth_lib                       $auth_lib               Autenticar
+ * @property Cargar_elementos_manager       $cargar_elementos_manager   Cargar elementos
+ * @property Correo                         $correo                 Correo lib
  * @property Convertidor_pem                $convertidor_pem        Lib para convertir key y cer a pem
  * @property Genera_estructura_cfdi33       $genera_estructura_cfdi33   Lib para generar estructura CFDI 33
  * @property Genera_estructura_cfdi33       $estructura             Lib para generar estructura CFDI 33
  * @property Generar_xml                    $generar_xml            Lib para generar xml
+ * @property Group                          $group                  Lib para group
+ * @property Lector_archivos                $lector_archivos        Lib de carga
+ * @property Menu_manager                   $menu_manager           Lib para generar menu
  * @property Timbrar                        $timbrar                Lib para timbrar CFDI
+ * @property User                           $user                   Lib para usuarios
  ***************** YOUR MODELS *****************
- * @property user_model          $user_model           $user
+ * @property Acl_model                      $acl_model                  Model de Acl
+ * @property Groups_model                   $groups_model               Model de groups
+ * @property Menu_model                     $menu_model                 Model de Menu
+ * @property Resources_model                $resources_model            Model de recursos
+ * @property Users_model                    $users_model                Model de usuarios
  */
 class CI_Controller {
     public function __construct() {

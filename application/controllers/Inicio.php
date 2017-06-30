@@ -85,7 +85,7 @@ class Inicio extends CI_Controller
         $Comprobante = [
             'Serie' => 'PRUEBA',
             'Folio' => '1',
-            'Fecha' => '2017-06-20T16:20:29',
+            'Fecha' => '2017-06-21T16:20:29',
             'Sello' => 'XXX',
             'FormaPago' => '01',
             'noCertificado' => 'XXX',
@@ -197,5 +197,11 @@ class Inicio extends CI_Controller
 //        $xml = $xml_timbrado;
 //        $data['xml'] = $xml;
 //        $this->load->view('inicio/inicio_index', $data);
+    }
+
+    public function key()
+    {
+        $key = bin2hex($this->encryption->create_key(16));
+        echo $key;
     }
 }
