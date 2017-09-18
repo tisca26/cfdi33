@@ -61,4 +61,5 @@ class User
     {
         return (isset($user['usuarios_id']))? $this->CI->users_model->borrar_con_acl($user) : $this->CI->users_model->borrar($user);
     }
+
 }

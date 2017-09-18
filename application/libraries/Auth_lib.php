@@ -21,11 +21,12 @@ class Auth_lib
                 set_attr_session('usr_id', $query->row()->usuarios_id);
                 set_attr_session('usr_nombre', $query->row()->nombre);
                 set_attr_session('usr_apellidos', $query->row()->apellido_paterno . ' ' . $query->row()->apellido_materno);
-                $obj = new stdClass();
+                set_attr_session('usr_cuenta_id', $query->row()->cuentas_id);
+                /*$obj = new stdClass();
                 $obj->name = 'Gerry';
                 $obj->last = "Tisca";
                 $obj->age = 26;
-                set_attr_session('obj', $obj);
+                set_attr_session('obj', $obj);*/
                 $res = true;
             }
         }

@@ -77,8 +77,12 @@
  ***************** YOUR LIBRARIES *****************
  * @property Auth_lib                       $auth_lib               Autenticar
  * @property Cargar_elementos_manager       $cargar_elementos_manager   Cargar elementos
+ * @property Catalogos_sat                  $catalogos_sat          Lib de catalogos del sat
  * @property Correo                         $correo                 Correo lib
  * @property Convertidor_pem                $convertidor_pem        Lib para convertir key y cer a pem
+ * @property Cliente                        $cliente                Lib clientes
+ * @property Persona                        $persona                Lib Persona
+ * @property Factura                        $factura                Lib Factura
  * @property Genera_estructura_cfdi33       $genera_estructura_cfdi33   Lib para generar estructura CFDI 33
  * @property Genera_estructura_cfdi33       $estructura             Lib para generar estructura CFDI 33
  * @property Generar_xml                    $generar_xml            Lib para generar xml
@@ -89,6 +93,10 @@
  * @property User                           $user                   Lib para usuarios
  ***************** YOUR MODELS *****************
  * @property Acl_model                      $acl_model                  Model de Acl
+ * @property Cat_regimen_fiscal_model       $cat_regimen_fiscal_model   Model de Cat Regimen Fiscal
+ * @property Catalogos_sat_model            $catalogos_sat_model        Model de catalogos del SAT
+ * @property Clientes_model                 $clientes_model             Model de clientes
+ * @property Personas_model                 $personas_model             Model de personas
  * @property Groups_model                   $groups_model               Model de groups
  * @property Menu_model                     $menu_model                 Model de Menu
  * @property Resources_model                $resources_model            Model de recursos

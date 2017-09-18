@@ -89,6 +89,9 @@
                                 <div class="note note-info">
                                     <p> A black page template with a minimal dependency assets to use as a base for any
                                         custom page you create </p>
+                                    <p>
+                                        <?php echo get_attr_session('usr_id'), get_attr_session('usr_apellidos'), get_attr_session('usr_cuenta_id'); ?>
+                                    </p>
                                 </div>
                             </div>
                             <!-- END PAGE CONTENT INNER -->
